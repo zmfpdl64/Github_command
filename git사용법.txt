@@ -87,7 +87,7 @@ git log //커밋한 로그를 확인할 수 있다.
 
 
 
-돌아가는 방법
+특정 커밋으로 돌아가는 방법
 reset  VS revert
 
 reset 특정 시점 이후의 코드를 제거한다.
@@ -216,7 +216,7 @@ git merge (name)
 git branch -d (name)
 //브랜치 삭제
 
-브랜치를 SorceTree로 관리하기
+브랜치를 SourceTree로 관리하기
 
 브랜치 버튼을 눌러 생성할 수 있다.
 
@@ -289,6 +289,10 @@ git pull
 
 다른 원격저장소에서 불러오기
 git pull origin (name)
+
+주의사항
+하나의 브랜치에서는 하나의 원격 저장소에
+push가 가능하다.
 
 하지만 충돌이 일어날 수 있다.
 동료가 먼저 PUSH를 하게 되면 충돌이 일어나기 때문에
