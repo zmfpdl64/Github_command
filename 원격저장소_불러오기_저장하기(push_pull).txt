@@ -1,0 +1,41 @@
+Push Pull 사용하는 방법
+
+git push
+//main branch에 커밋한 정보들이 업데이트된다.
+
+git pull
+//동료가 push한 data를 당겨와 내 프로젝트에 fetch 된다.
+
+다른 원격저장소에서 불러오기
+git pull origin (name)
+
+주의사항
+하나의 브랜치에서는 하나의 원격 저장소에
+push가 가능하다.
+
+하지만 충돌이 일어날 수 있다.
+동료가 먼저 PUSH를 하게 되면 충돌이 일어나기 때문에
+해결할 수 있는 방법은 2가지가 있다.
+
+1. git pull --no-rebase
+//local의 저장소와 remote의 저장소가
+//2갈래로 갈라져 다시 병합된다.
+
+2. git pull --rebase
+//동료의 code가 내 코드 보다 먼저 rebase된 후
+//내가 추가한 코드를 리베이스 한다.
+
+주의사항
+rebase는 협업할때는 사용하면 매우 번거롭게 작업이 될 수 있다.
+그렇기에 협업상황에서는 merge를 사용하는것이 더 맞다.
+
+하지만 pull할때의 rebase를 사용하는것은 괜찮다.
+
+협업관계에서 상대방을 무시하고 pull없이 push하는 방법
+git push --force
+//사용이 거의 금지되는 명령어
+
+git fetch
+//원격 저장소의 변경사항 확인
+
+git push (원격 이름) --delete (원격 브랜치명)

@@ -1,0 +1,69 @@
+git의 구조
+
+1. working directory
+1.1 untracked
+새로 만들어진 파일
+
+1.2 tracked
+기존에 있던 파일
+
+1.2.1 unmodified
+수정이 되지 않은 파일
+1.2.2 modified
+수정이 된 파일
+
+git add .
+//스테이징 에리어로 이동
+
+
+2. staging area
+//스테이징된 파일들에 코멘트를 달아 directory에 해쉬값과 같이 깃디렉터리에 저장한다.
+git commit -m "" ->
+
+
+3. .git directory
+
+깃디렉터리는 git commit으로 버전정보를 저장하고 원격저장소에 연결할 때 구조적인 형태를 가질 수 있다.
+
+1,2,3은 내 컴퓨터상에만 저장할 수 있다.
+
+그렇기에 remote 원격 저장소에 저장하게 된다.
+
+remote 원격 저장소라고 하면 Github, gitlab 등.. 이 있다.
+
+
+
+4. remote
+
+새롭게 저장소 생성
+
+git init
+//깃 디렉터리 생성
+
+git add README.md
+
+git commit -m "first commit"
+//최초 커밋 생성
+
+git branch -M main
+// master 브랜치의 이름을 main으로 변경
+
+git remote add origin (깃허브 저장소 url)
+
+git push -u origin main 
+//메인 원격저장소에 저장한다.
+//u 옵션은 기본 저장소를 설정할 때 사용한다.
+
+git remote add origin (깃허브 저장소 url)
+
+
+
+ 기존 저장소 이용
+
+ git remote add origin (깃허브 저장소 url)
+ //origin은 원격저장소의 이름으로 변경가능하다.
+
+ git branch -M main
+
+ git push -u origin main
+
