@@ -287,6 +287,9 @@ git push
 git pull
 //동료가 push한 data를 당겨와 내 프로젝트에 fetch 된다.
 
+다른 원격저장소에서 불러오기
+git pull origin (name)
+
 하지만 충돌이 일어날 수 있다.
 동료가 먼저 PUSH를 하게 되면 충돌이 일어나기 때문에
 해결할 수 있는 방법은 2가지가 있다.
