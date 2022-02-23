@@ -1,0 +1,71 @@
+git config --list 
+모든 설정 확인 가능
+
+git config --global -e
+터미널에서 설정 확인
+
+git config --global core.editor "code"
+//vsc 에디터에서 설정 확인
+
+git config --global core.editor "code --wait"
+//에디터 종료 전까지 터미널 대기
+
+git config --global user.name "woojin"
+//전역 변수 설정
+
+git config --global user.email "woojin1234@naver.com"
+
+git config user.name
+//내 이름 출력
+
+git config --global core.autocrlf true
+//윈도우 환경에서 줄바꿈 문자열을 관리해준다. \r\n
+
+git config --global core.autocrlf input
+//맥 환경에서 \n 사용
+
+git status
+
+git config --global alias.st status
+git st
+
+git config --h
+명령어를 확인할 수 있다.
+
+
+git의 구조
+
+1. working directory
+1.1 untracked
+새로 만들어진 파일
+
+1.2 tracked
+기존에 있던 파일
+1.2.1 unmodified
+수정이 되지 않은 파일
+1.2.2 modified
+수정이 된 파일
+
+2. staging area
+
+3. .git directory
+
+1,2,3은 내 컴퓨터상에만 저장할 수 있다.
+
+그렇기에 remote 원격 저장소에 저장하게 된다.
+
+
+
+git add . //현재 모든 파일을 올리겠다.
+//staging area로 옮기는 과정
+
+git add a.txt //a.txt를 스테이징 에리어로 옮긴다.
+
+git rm --cached *
+//git add한 데이터를 모두 삭제한다.
+
+추가하고 싶지 않는 파일을 .gitignore에 추가한다.
+*.log
+Build/*.log
+
+
