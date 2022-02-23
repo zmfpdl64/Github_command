@@ -18,7 +18,7 @@ git add .
 
 2. staging area
 //스테이징된 파일들에 코멘트를 달아 directory에 해쉬값과 같이 깃디렉터리에 저장한다.
-git commit -m "" ->
+git commit -m ""
 
 
 3. .git directory
