@@ -1,8 +1,6 @@
 # Compiled class file
 *.class
-*.txt
-git사용법.txt
-git사용법.*
+
 # Log file
 *.log
 
