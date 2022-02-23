@@ -1,3 +1,6 @@
+git config --global gui.encoding utf-8
+//gui 한글 깨짐 해결
+
 git config --list 
 모든 설정 확인 가능
 
@@ -46,8 +49,12 @@ git의 구조
 1.2.2 modified
 수정이 된 파일
 
+git add .->
+
 2. staging area
 
+
+git commit -m "" ->
 3. .git directory
 
 1,2,3은 내 컴퓨터상에만 저장할 수 있다.
@@ -68,4 +75,23 @@ git rm --cached *
 *.log
 Build/*.log
 
+git diff //이전 버전과 달라진 내용을 출력한다.
 
+git diff --staged //스테이징 파일을 볼 수 있다.
+
+git diff --cached //스테이지랑 동의어로 사용한다.
+
+버전을 만들 때 commit을 사용한다.
+
+git log //커밋한 로그를 확인할 수 있다.
+
+
+
+돌아가는 방법
+reset  VS revert
+
+reset 특정 시점 이후의 코드를 제거한다.
+
+revert는 는 특정 시점에 코드한것만 제거할 수 있다.
+
+git test
